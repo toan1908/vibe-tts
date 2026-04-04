@@ -1,0 +1,24 @@
+{
+  "name": "vibe-tts",
+  "version": "1.0.0",
+  "description": "VibeTTS - Premium AI Text to Speech",
+  "scripts": {
+    "start": "node server/server.js",
+    "postinstall": "npm run build",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server/server.js",
+    "client": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "google-tts-api": "^2.0.2",
+    "msedge-tts": "^2.0.4"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
