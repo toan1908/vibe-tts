@@ -3,7 +3,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "server/server.js"
+      "dest": "api/server.js"
     },
     {
       "src": "/assets/(.*)",
@@ -16,7 +16,7 @@
     }
   ],
   "functions": {
-    "server/server.js": {
+    "api/server.js": {
       "maxDuration": 60
     }
   },
